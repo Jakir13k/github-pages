@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects - Class 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #3b5998, #8b9dc3);
+            height: 100vh;
+            padding-left: 20px; /* Space from the left */
+        }
+
+        /* Sticky Top Bar */
+        .topbar {
+            width: 100%;
+            background: #222;
+            color: white;
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* Box Container */
+        .container {
+            margin-top: 70px; /* Space below the top bar */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        /* Subject Boxes */
+        .box {
+            width: 220px;
+            height: 60px;
+            background: white;
+            color: #333;
+            text-align: left;
+            padding-left: 20px;
+            line-height: 60px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Subject Colors */
+        .english { background: #ff4757; color: white; }
+        .assamese { background: #ffa502; color: white; }
+        .social { background: #1e90ff; color: white; }
+        .science { background: #2ed573; color: white; }
+        .maths { background: #3742fa; color: white; }
+        .hindi { background: #ff6348; color: white; }
+
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">Subjects - Class 6</div>
+
+    <!-- Subject Boxes -->
+    <div class="container">
+        <div class="box english" onclick="location.href='english.html'">English</div>
+        <div class="box assamese" onclick="location.href='assamese.html'">Assamese</div>
+        <div class="box social" onclick="location.href='social.html'">Social Science</div>
+        <div class="box science" onclick="location.href='science.html'">Science</div>
+        <div class="box maths" onclick="location.href='maths.html'">Maths</div>
+        <div class="box hindi" onclick="location.href='hindi.html'">Hindi</div>
+    </div>
+</body>
+</html>
